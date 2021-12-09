@@ -203,7 +203,7 @@ router.get('/addapikey', (req, res, next) => {
 
     if (!apikey) return res.json(loghandler.notparam)
     if (!(status && apikeyInput && email && nomorhp && name && age && country && exp)) return res.json(loghandler.notAddApiKey)
-    if (apikey != 'Alphabot') return res.json(loghandler.invalidKey)
+    if (apikey != '𝙈𝙊𝙉𝘼𝘼.') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.insert({
@@ -242,7 +242,7 @@ router.get('/remove', (req, res, next) => {
 
     if (!apikey) return res.json(loghandler.notparam)
     if (!(status && apikeyInput && email && nomorhp && name && age && country && exp)) return res.json(loghandler.notAddApiKey)
-    if (apikey != 'Alphabot') return res.json(loghandler.invalidKey)
+    if (apikey != '𝙈𝙊𝙉𝘼𝘼.') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.remove({
@@ -287,14 +287,14 @@ router.get('/china', async (req, res, next) => {
 router.get('/cewe/vietnam', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/vietnam.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'OhMyWill',
                  result
              })
          })
@@ -305,14 +305,14 @@ router.get('/cewe/vietnam', async (req, res, next) => {
 router.get('/cewe/thailand', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/thailand.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'OhMyWill',
                  result
              })
          })
@@ -323,14 +323,14 @@ router.get('/cewe/thailand', async (req, res, next) => {
 router.get('/cewe/china', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/china.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'OhMyWill',
                  result
              })
          })
@@ -341,14 +341,14 @@ router.get('/cewe/china', async (req, res, next) => {
 router.get('/cewe/indonesia', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/indonesia.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'OhMyWill',
                  result
              })
          })
@@ -359,14 +359,14 @@ router.get('/cewe/indonesia', async (req, res, next) => {
 router.get('/cewe/korea', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/korea.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'Zeeone',
+             	author: 'OhMyWill',
                  result
              })
          })
@@ -377,7 +377,7 @@ router.get('/cewe/korea', async (req, res, next) => {
 router.get('/cewe/japan', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/japan.json`))
         .then(response => response.json())
         .then(data => {
@@ -395,7 +395,7 @@ router.get('/cewe/japan', async (req, res, next) => {
 router.get('/cewe/malaysia', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/zeeoneofc/Asupan/main/cecan/malaysia.json`))
         .then(response => response.json())
         .then(data => {
@@ -414,7 +414,7 @@ router.get('/cewe/malaysia', async (req, res, next) => {
 router.get('/asupan/cecan', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/cecan.json`))
         .then(response => response.json())
         .then(data => {
@@ -433,7 +433,7 @@ router.get('/asupan/cecan', async (req, res, next) => {
 router.get('/asupan/hijaber', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/hijaber.json`))
         .then(response => response.json())
         .then(data => {
@@ -452,7 +452,7 @@ router.get('/asupan', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/asupan.js`))
         .then(response => response.json())
@@ -473,7 +473,7 @@ router.get('/asupan/rikagusriani', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/asupan/rikagusriani.json`))
         .then(response => response.json())
@@ -494,7 +494,7 @@ router.get('/asupan/santuy', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/santuy.json`))
         .then(response => response.json())
@@ -515,7 +515,7 @@ router.get('/asupan/ukty', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/ukhty.json`))
         .then(response => response.json())
@@ -536,7 +536,7 @@ router.get('/asupan/bocil', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/bocil.json`))
         .then(response => response.json())
@@ -557,7 +557,7 @@ router.get('/asupan/ghea', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/geayubi.json`))
         .then(response => response.json())
@@ -580,7 +580,7 @@ router.get('/nsfw/ass', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/ass.json`))
         .then(response => response.json())
@@ -601,7 +601,7 @@ router.get('/nsfw/ahegao', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/ahegao.json`))
         .then(response => response.json())
@@ -622,7 +622,7 @@ router.get('/nsfw/bdsm', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if (apikeyInput != 'Alphabot')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != '𝙈𝙊𝙉𝘼𝘼.')  return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/bdsm.json`))
         .then(response => response.json())
